@@ -2,11 +2,34 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CSS cdn link -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-        <title>Tailwind CSS project</title>
+        <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
+        <title>SWAROVSKI</title>
     </head>
 
     <body>
-        
+        <header class="relative h-[800px] flex items-center justify-center bg-center bg-cover"
+            style="background-image: url('./images/header_bg.png');">
+            <div class="absolute insert-0 bg-black bg-opacity-20"></div>
+            <div class="relative z-10 flex flex-col items-start max-w-2xl p-8 text-white">
+                <h1 class="text-[4rem] leading-none font-serif tracking-wide mb-8 uppercase">
+                    SWAROVSKI
+                </h1>
+                <h2 class="text-3xl font-semibold mb-2 text-black">Весна–Лето 2025</h2>
+                <p class="mb-6 text-black text-lg">
+                    Шагните в наш магический мир, где сияет преобразующая сила кристалла.
+                </p>
+                <div class="flex gap-4">
+                    <button class="bg-black text-white px-6 py-2 uppercase tracking-wide rounded shadow 
+                        hover:bg-gray-800 transition">Каталог
+                    </button>
+                    <button class="border border-black text-black px-6 py-2 uppercase tracking-wide rounded 
+                        hover:bg-black hover:text-white transition">Узнать больше</button>
+                </div>
+            </div>
+        </header>
+
     </body>
 </html>
