@@ -8,8 +8,9 @@
     font-style: normal;
 }
 
-/* Remove the @theme block, as it's not valid CSS or Tailwind syntax. 
-    To set a custom hover color in Tailwind CSS v4, use the `theme.extend.colors` in your tailwind.config.js file, not in main.css.
-    In your HTML, use Tailwind utility classes like `hover:bg-[#c4d5e7]` on your button element. 
-    No code is needed here in main.css for the hover color if you use Tailwind utility classes. 
-*/
+@font-face {
+    font-family: 'ZT Chablis';
+    src: url('/fonts/zt-chablis/zt-chablis-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
