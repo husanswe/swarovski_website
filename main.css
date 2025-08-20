@@ -14,3 +14,31 @@
     font-weight: normal;
     font-style: normal;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 1440px;
+    
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #fff;
+    box-shadow: 0px 0px 2.7px 0px rgba(0, 0, 0, 0.18);
+    height: 18px;
+    border-radius: 36px;
+    width: 100%;
+    width: 1440px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    width: 100px;
+    height: 8px;
+    background: #ECE9E9;
+    border-radius: 36px;
+    opacity: 0;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    opacity: 0.3;
+}
