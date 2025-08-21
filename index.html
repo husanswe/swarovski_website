@@ -105,7 +105,7 @@
 
 
         <!-- Popular products -->
-        <section class="bg-[#F3F0E6]">
+        <section class="bg-[#F3F0E6] pb-[100px]">
             <h2 class="text-6xl font-bold text-black text-center pt-25 pb-16">Популярные товары</h2>
            
                 <div class="max-w-[1440px] mx-auto">
@@ -220,6 +220,54 @@
             </div>
         </section>
 
+        <!-- Collections section -->
+        <section class="collection-section">
+            <div class="container max-w-[1920px] mx-auto px-20">
+                <h2>Коллекции</h2>
+
+                <div class="collection-grid grid grid-cols-1 gap-16">
+
+                    <!-- Collection item 1 -->
+                    <div class="collection-item grid grid-cols-2 gap-8 items-center">
+                        <div class="content">
+                            <h3>Культовый гламур</h3>
+                            <p>
+                                Мир цвета и света Swarovski оживает с 
+                               Арианой Гранде, воплощающей суть нашей 
+                               легендарной семьи Millenia. Свежие сиреневые 
+                               тона в сочетании с ее яркой звездной силой 
+                               создают высококлассную модную фантазию.
+                            </p>
+                            <button>Посмотреть</button>
+                        </div>
+                        <div>
+                            <img src="./images/ariana_grande_1.jpg" alt="Ariana Grande 1">
+                        </div>
+                    </div>
+
+                    <!-- Collection item 2 -->
+                    <div class="collection-item grid grid-cols-2 gap-8 items-center [&>*:first-child]:order-2">
+                        <div class="content">
+                            <h3>Сила цветов</h3>
+                            <p>
+                                Чувственный. Поэтично. Прохладный. 
+                                Ариана Гранде расцветает в весенне-летнем 
+                                сезоне 2025 года, воплощая собой яркую 
+                                романтику в Идиллии. Нежные мотивы флоры 
+                                и фауны, созданные с удивительной живостью, 
+                                придают ей мягкое сияние.
+                            </p>
+                            <button>Посмотреть</button>
+                        </div>
+                        <div>
+                            <img src="./images/ariana_grande_2.jpg" alt="Ariana Grande 1">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
 
         <!-- JS file linking -->
         <script src="./script.js"></script>
