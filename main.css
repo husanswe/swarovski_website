@@ -3,14 +3,14 @@
 
 @font-face {
     font-family: 'Euclid Circular B';
-    src: url('/fonts/euclid-circular-b/Euclid\ Circular\ B\ Regular.ttf') format('truetype');
+    src: url('/fonts/euclid-circular-b/Euclid\ Circular\ B\ Regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ZT Chablis';
-    src: url('/fonts/zt-chablis/zt-chablis-regular.woff2') format('woff2');
+    src: url('/fonts/zt-chablis/zt-chablis-regular.woff2') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
