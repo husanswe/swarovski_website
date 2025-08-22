@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: 'ZT Chablis';
-    src: url('/fonts/zt-chablis/zt-chablis-regular.woff2') format('ttf');
+    src: url('/fonts/zt-chablis/zt-chablis-regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
