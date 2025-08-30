@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./main.css">
+    <title>Магазины</title>
+
+    <!-- Tailwind CSS tag -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header class="bg-[#f3f0e6] w-full h-full">
+
+        <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md">
+            <div class="flex justify-center items-center pt-[43px] pb-[31px]">
+                <h1 class="text-9xl text-white tracking-widest font-['EuclidRegular']">
+                    SWAROVSKI
+                </h1>
+            </div>
+            <nav class="text-white">
+                <div class="flex justify-center items-center space-x-25 pb-5">
+                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Главная</a>
+                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors text-nowrap">О бренде</a>
+                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Каталог</a>
+                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Коллекции</a>
+                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Магазины</a>
+                    <div class="flex space-x-10">
+                        <img src="./images/search.png" alt="Magnifying glass icon">
+                        <img src="./images/favourites.png" alt="Heart icon">
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Hero section -->
+        <div class="container mx-[80px] mt-[20px]">
+            <nav>
+                <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Магазины</a>
+            </nav>
+        </div>
+
+        <div class="container bg-[#f3f0e6] mx-[80px] mt-[32px] w-full">
+            <h1 class="text-[62px] font-['Zt_Chablis'] font-bold leading-[64px]">Магазины</h1>
+        
+
+            <div class="content-wrapper flex flex-column justify-between items-start">
+                <div class="text-content w-[810px] h-[156px]">
+                    <p class="text-lg font-['Euclid_Circular_B'] leading-[26px] pt-[16px]">
+                        Купить онлайн можно на сайте www.alltime.ru. <br>
+                        AllTime.ru – крупнейшая сеть магазинов часов и 
+                        ювелирных изделий в России. <br>
+                        В светлых и уютных залах вы сможете выбрать и примерить понравившуюся модель.<br>
+                        Магазины отличаются между собой представленными брендами и 
+                        ценовым диапазоном. <br>
+                        Любая доступная на сайте модель по вашему 
+                        запросу будет доставлена <br>
+                        в салон AllTime.ru для примерки. К покупке это не обязывает. 
+                    </p>
+                </div>
+
+                <button class="w-[313px] h-[50px] border-[1px] ml-[157px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%]">Смотреть на сайте</button>
+
+            </div>
+            <hr class="border-[#B8B7B6] w-[519px] border-[1px] mt-[32px]">
+        </div>
+    </header>
+
+    <section class="shops bg-[#f3f0e6]">
+        <div class="container py-16 px-8 max-w-[1760px] mx-auto">
+
+            <!-- First grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Москва</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col mb-12">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Москва, ул. Русаковская, д.1</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (495) 363-39-76</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Москва, Петровский бул., 21</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (495) 902-54-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Санкт-Петербург</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Санкт-Петербург, Лиговский просп., 10/118</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (812) 426-31-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Волгоград</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Волгоград, просп. имени В.И. Ленина, 6</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (844) 243-69-29</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Воронеж</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Воронеж, просп. Революции, 53</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (473) 202-21-40</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Екатеринбург</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col mb-12">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Екатеринбург, ул. Вайнера, 16</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (343) 227-70-57</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Екатеринбург, ул. Радищева, 25</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (800) 200-39-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Иркутск</h3>
+                    
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Иркутск, ул. Урицкого, 18</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (800) 200-39-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Казань</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Казань, ул. Островского, 36</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (843) 292-23-14</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Калининград</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Калининград, ул. Черняховского, 6А</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (401) 264-04-09</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Краснодар</h3>
+                    
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Краснодар, ул. Красная, 65</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (861) 250-60-22</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fourth grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Красноярск</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Красноярск, просп. Мира, 91А</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (391) 263-21-24</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Мурманск</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col mb-12">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Мурманск, просп. Ленина, 61</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (815) 262-45-32</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Мурманск, просп. Ленина, 32</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (800) 200-39-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Нижний Новгород</h3>
+                    
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Нижний Новгород , ул. Большая Покровская, 61</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (831) 433-38-78</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Новосибирск</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col mb-12">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Новосибирск, Красный просп., 71</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (495) 363-39-76</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Новосибирск, Красный просп., 69</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (495) 902-54-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Омск</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Омск, ул. Ленина, 14</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (812) 426-31-75</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Пермь</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Пермь, Комсомольский просп., 35</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (844) 243-69-29</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixth grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Ростов на дону</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Ростов на дону, ул. Большая Садовая, 89</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (843) 292-23-14</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Самара</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Самара, ул. Куйбышева, 68</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (401) 264-04-09</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Саратов</h3>
+                    
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Саратов, просп. имени Петра Столыпина, 9</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (861) 250-60-22</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Seventh grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Сочи</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Сочи, ул. Роз, 67, микрорайон Центральный</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (843) 292-23-14</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Ставрополь</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Ставрополь, просп. Карла Маркса, 68</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (401) 264-04-09</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Тула</h3>
+                    
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Тула, ул. Советская, 27</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (861) 250-60-22</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eighth grid container -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-16 gap-y-12 w-full justify-items-center mt-[60px] mb-[100px]">
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Уфа</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Уфа, ул. 50-летия Октября, 18</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span class="">с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (843) 292-23-14</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+                
+                <div class="city-block">
+                    <h3 class="font-['Euclid_Circular_B'] font-medium text-2xl leading-[28px] mb-[18px]">Челябинск</h3>
+
+                    <div class="store-card bg-white w-[416px] h-[170px] rounded-[9px] p-[16px] flex flex-col">
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[24px]">Челябинск, просп. Ленина, 62</p>
+                        <div class="font-['Euclid_Circular_B'] flex items-center space-x-4 mt-3">
+                            <span>с 10.00 до 21.00</span>
+                            <div class="w-px h-[28px] bg-[#757575]"></div>
+                            <span>+7 (401) 264-04-09</span>
+                        </div>
+                        <a href="#" class="text-blue-400 underline mt-auto">Посмотреть на карте</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <div class="h-[424px] bg-[#8dbaed] flex justify-center items-center">
+            <div class="content-wrapper flex items-center justify-center w-full mx-auto">
+
+                <div class="text-content flex-1 flex flex-col justify-center items-center max-w-[735px] h-[268px] py-[78px] ml-[270px]">
+                    <h1 class="font-['Zt_Chablis'] text-[38px] font-bold leading-[44px] pb-[22px]">Искусство сиять со Swarovski</h1>
+                    <p class="font-['Euclid_Circular_B'] text-lg leading-[26px] pb-[48px]">
+                        Откройте мир безупречной красоты и роскоши вместе 
+                        с кристаллами Swarovski! Наслаждайтесь изысканным 
+                        блеском ювелирных украшений, блистательных аксессуаров 
+                        и эксклюзивных подарков, созданных с непревзойденным 
+                        мастерством австрийских мастеров.
+                    </p>
+                    <button class="font-['Euclid_Circular_B'] bg-black text-white py-[14px] px-[74px] text-lg font-medium leading-[120%]">В каталог</button>
+                </div>
+
+                <div class="image-content relative left-50">
+                    <img class="w-[250px] h-[308px] object-contain" src="./images/swan.jpg" alt="Swan image">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="h-[570px] w-full bg-black flex flex-col">
+            <div class="quick-links w-[1300px] h-[230px] flex flex-col justify-between ml-[80px] mt-[80px]">
+                
+                <div class="flex justify-between items-start space-x-[170px]">
+                    
+                    <div class="flex flex-col text-white">
+                        <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Коллекции</h4>
+                        <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                            <li>The Best Accessories for Your Black Dress</li>
+                            <li>A High note</li>
+                            <li>Astrology Gifts & Zodiac Accessories</li>
+                            <li>Ocean-Inspired Jewelry</li>
+                            <li>Eternal Sunshine</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-white flex flex-col">
+                        <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Навигация</h4>
+                        <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                            <li>Главная</li>
+                            <li>О бренде</li>
+                            <li>Каталог</li>
+                            <li>FAQ</li>
+                        </ul>
+                    </div>
+
+                    <div class="text-white flex flex-col">
+                        <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Магазины</h4>
+                        <p class="font-['Euclid_Circular_B']">Магазины</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                    <hr class="w-[1750px] border-t border-white opacity-30 mt-[71px] items-center justify-center mx-auto">
+
+                <div class="text-center">
+                    <h1 class="text-white font-['EuclidRegular'] font-bold text-6xl my-[66px]">SWAROVSKI</h1>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
