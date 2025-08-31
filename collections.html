@@ -52,23 +52,60 @@
     </header>
 
     <!-- Description section -->
-    <div class="flex flex-col">
-        <div class="container ml-[80px] mt-[20px]">
-            <nav>
-                <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Коллекции</a>
-            </nav>
-        </div>
+    <section>
+        <div class="flex flex-col">
+            <div class="container ml-[80px] mt-[20px]">
+                <nav>
+                    <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Коллекции</a>
+                </nav>
+            </div>
 
-        <div class="bg-white w-full justify-center items-center flex flex-col space-y-6 pt-[100px] pb-[100px]">
-            <h2 class="font-['Zt_Chablis'] font-bold text-[62px] leading-[64px]">Испытайте чудо</h2>
-            <p class="text-center text-lg leading-[26px] max-w-[710px] font-normal font-['Euclid_Circular_B']">
-                Откройте для себя мир, где сталкиваются магия и логика, где сияет 
-                преобразующая сила кристалла, а радостное самовыражение воплощает 
-                в жизнь стильные фантазии. В главной роли — поп-икона и всемирный 
-                амбассадор бренда Ариана Гранде.
-            </p>
+            <div class="bg-white w-full justify-center items-center flex flex-col space-y-6 pt-[100px] pb-[100px]">
+                <h2 class="font-['Zt_Chablis'] font-bold text-[62px] leading-[64px]">Испытайте чудо</h2>
+                <p class="text-center text-lg leading-[26px] max-w-[710px] font-normal font-['Euclid_Circular_B']">
+                    Откройте для себя мир, где сталкиваются магия и логика, где сияет 
+                    преобразующая сила кристалла, а радостное самовыражение воплощает 
+                    в жизнь стильные фантазии. В главной роли — поп-икона и всемирный 
+                    амбассадор бренда Ариана Гранде.
+                </p>
+            </div>
         </div>
-    </div>
+    </section>
+    
 
+    <!-- Collections sections -->
+    <section class="bg-[#f2f0e6] py-25 px-20">
+        <div class="w-full mx-auto">
+            <h2 class="text-left font-['Zt_Chablis'] font-bold text-[62px] leading-[64px] mb-[48px]">Коллекции</h2>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-start">
+
+                <!-- Left image -->
+                <div class="relative max-w-[631px]">
+                    <img class="w-[631px] h-[616px]" src="./images/ariana_grande_1.jpg" alt="Ariana Grande's photo">
+                    
+                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+
+                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[203px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                    </button>
+                </div>
+
+                <!-- Right: Content -->
+                <div>
+                    <div>
+                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Культовый гламур</h3>
+                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                            Мир цвета и света Swarovski оживает с Арианой Гранде, 
+                            воплощающей суть нашей легендарной семьи Millenia. 
+                            Свежие сиреневые тона в сочетании с ее яркой звездной 
+                            силой создают высококлассную модную фантазию.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
 </html>
