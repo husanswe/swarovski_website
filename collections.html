@@ -1,402 +1,477 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./main.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
+        <link rel="stylesheet" href="./main.css">
 
-    <!-- Tailwind CSS tag -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <!-- Tailwind CSS tag -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <title>Коллекции</title>
-</head>
-<body>
-    <!-- Header section -->
-    <header class="relative bg-center bg-cover bg-no-repeat w-full h-screen"
-        style="background-image: url('./images/header_bg.png');" alt="Header background image">
+        <title>Коллекции</title>
+    </head>
+    <body>
+        <!-- Header section -->
+        <header class="relative bg-center bg-cover bg-no-repeat w-full h-screen"
+            style="background-image: url('./images/header_bg.png');" alt="Header background image">
 
-        <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md">
-            <div class="flex justify-center items-center pt-[43px] pb-[31px]">
-                <h1 class="text-9xl text-white tracking-widest font-['EuclidRegular']">
-                    <a href="./index.html">SWAROVSKI</a>
-                </h1>
-            </div>
-            <nav class="text-white">
-                <div class="flex justify-center items-center space-x-25 pb-5">
-                    <a href="./index.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Главная</a>
-                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors text-nowrap">О бренде</a>
-                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Каталог</a>
-                    <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Коллекции</a>
-                    <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Магазины</a>
-                    <div class="flex space-x-10">
-                        <img src="./images/search.png" alt="Magnifying glass icon">
-                        <img src="./images/favourites.png" alt="Heart icon">
-                    </div>
+            <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md">
+                <div class="flex justify-center items-center pt-[43px] pb-[31px]">
+                    <h1 class="text-9xl text-white tracking-widest font-['EuclidRegular']">
+                        <a href="./index.html">SWAROVSKI</a>
+                    </h1>
                 </div>
-            </nav>
-        </div>
-
-        <div class="absolute top-[550px] left-[130px] space-y-4">
-            <h2 class="text-[62px] leading-[120%] font-bold text-black font-['Zt_Chablis']">Весна-Лето 2025</h2>
-
-            <p class="text-black max-w-sm text-[18px]/[26px] font-['Euclid_Cicular_B']">
-                Шагните в наш магический мир, где сияет преобразующая сила кристалла.
-            </p>
-
-            <div>
-                <button class="bg-black text-white mt-[28px] px-[74px] py-[14px] font-medium text-lg font-['Euclid_Cicular_B']">
-                    Купить
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!-- Description section -->
-    <section>
-        <div class="flex flex-col">
-            <div class="container ml-[80px] mt-[20px]">
-                <nav>
-                    <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Коллекции</a>
+                <nav class="text-white">
+                    <div class="flex justify-center items-center space-x-25 pb-5">
+                        <a href="./index.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Главная</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors text-nowrap">О бренде</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Каталог</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Коллекции</a>
+                        <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Магазины</a>
+                        <div class="flex space-x-10">
+                            <img src="./images/search.png" alt="Magnifying glass icon">
+                            <img src="./images/favourites.png" alt="Heart icon">
+                        </div>
+                    </div>
                 </nav>
             </div>
 
-            <div class="bg-white w-full justify-center items-center flex flex-col space-y-6 pt-[100px] pb-[100px]">
-                <h2 class="font-['Zt_Chablis'] font-bold text-[62px] leading-[64px]">Испытайте чудо</h2>
-                <p class="text-center text-lg leading-[26px] max-w-[710px] font-normal font-['Euclid_Circular_B']">
-                    Откройте для себя мир, где сталкиваются магия и логика, где сияет 
-                    преобразующая сила кристалла, а радостное самовыражение воплощает 
-                    в жизнь стильные фантазии. В главной роли — поп-икона и всемирный 
-                    амбассадор бренда Ариана Гранде.
+            <div class="absolute top-[550px] left-[130px] space-y-4">
+                <h2 class="text-[62px] leading-[120%] font-bold text-black font-['Zt_Chablis']">Весна-Лето 2025</h2>
+
+                <p class="text-black max-w-sm text-[18px]/[26px] font-['Euclid_Cicular_B']">
+                    Шагните в наш магический мир, где сияет преобразующая сила кристалла.
                 </p>
-            </div>
-        </div>
-    </section>
-    
 
-    <!-- Collections section -->
-    <section class="bg-[#f2f0e6] py-25">
-        <h2 class="text-left font-['Zt_Chablis'] font-bold text-[62px] leading-[64px] mb-[48px] ml-[312.5px]">Коллекции</h2>
-
-        <div class="w-full mx-auto flex justify-center items-center flex-col">
-            
-            <!-- First block -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto">
-
-                <!-- Left image -->
-                <div class="relative w-[631px]">
-                    <img class="w-full h-[616px] object-cover" src="./images/ariana_grande_1.jpg" alt="Ariana Grande's photo">
-                    
-                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white 
-                        to-transparent pointer-events-none"></div>
-
-                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
-                            font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
-                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
-                    </button>
-                </div>
-
-                <!-- Right Content -->
                 <div>
-                    <div>
-                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Культовый гламур</h3>
-                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
-                            Мир цвета и света Swarovski оживает с Арианой Гранде, 
-                            воплощающей суть нашей легендарной семьи Millenia. 
-                            Свежие сиреневые тона в сочетании с ее яркой звездной 
-                            силой создают высококлассную модную фантазию.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-cols-2 gap-5 mt-[42px]">
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/bracelet-1.png" alt="Bracelet image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/earrings.png" alt="Earrings image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Earrings</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-            <!-- Second block -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mt-[150px]">
-
-                <!-- Left content -->
-                <div>
-                    <div>
-                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Сила цветов</h3>
-                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
-                            Чувственный. Поэтично. Прохладный. Ариана Гранде расцветает 
-                            в весенне-летнем сезоне 2025 года, воплощая собой яркую романтику 
-                            в Идиллии. Нежные мотивы флоры и фауны, созданные с удивительной 
-                            живостью, придают ей мягкое сияние.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-cols-2 gap-5 mt-[42px] w-[631px]">
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/bracelet-2.png" alt="Bracelet image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/flower-ring.png" alt="Flower ring image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Flower Ring</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Right image -->
-                <div class="relative w-[631px]">
-                    <img class="w-full h-[616px] object-cover" src="./images/ariana_grande_2.jpg" alt="Ariana Grande's photo">
-                    
-                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
-
-                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
-                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                    <button class="bg-black text-white mt-[28px] px-[74px] py-[14px] font-medium text-lg font-['Euclid_Cicular_B']">
+                        Купить
                     </button>
                 </div>
             </div>
+        </header>
+
+        <!-- Description section -->
+        <section>
+            <div class="flex flex-col">
+                <div class="container ml-[80px] mt-[20px]">
+                    <nav>
+                        <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Коллекции</a>
+                    </nav>
+                </div>
+
+                <div class="bg-white w-full justify-center items-center flex flex-col space-y-6 pt-[100px] pb-[100px]">
+                    <h2 class="font-['Zt_Chablis'] font-bold text-[62px] leading-[64px]">Испытайте чудо</h2>
+                    <p class="text-center text-lg leading-[26px] max-w-[710px] font-normal font-['Euclid_Circular_B']">
+                        Откройте для себя мир, где сталкиваются магия и логика, где сияет 
+                        преобразующая сила кристалла, а радостное самовыражение воплощает 
+                        в жизнь стильные фантазии. В главной роли — поп-икона и всемирный 
+                        амбассадор бренда Ариана Гранде.
+                    </p>
+                </div>
+            </div>
+        </section>
 
 
-            <!-- Third block -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto mt-[150px]">
+        <!-- Collections section -->
+        <section class="bg-[#f2f0e6] py-25">
+            <h2 class="text-left font-['Zt_Chablis'] font-bold text-[62px] leading-[64px] mb-[48px] ml-[312.5px]">Коллекции</h2>
 
-                <!-- Left image -->
-                <div class="relative w-[631px]">
-                    <img class="w-full h-[616px] object-cover" src="./images/fashion-model.png" alt="Fashion model photo">
+            <div class="w-full mx-auto flex justify-center items-center flex-col">
+                
+                <!-- First block -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto">
 
-                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white
-                        to-transparent pointer-events-none"></div>
+                    <!-- Left image -->
+                    <div class="relative w-[631px]">
+                        <img class="w-full h-[616px] object-cover" src="./images/ariana_grande_1.jpg" alt="Ariana Grande's photo">
+                        
+                        <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white 
+                            to-transparent pointer-events-none"></div>
 
-                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
-                            font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
-                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
+                                font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                            <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        </button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div>
+                        <div>
+                            <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Культовый гламур</h3>
+                            <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                                Мир цвета и света Swarovski оживает с Арианой Гранде, 
+                                воплощающей суть нашей легендарной семьи Millenia. 
+                                Свежие сиреневые тона в сочетании с ее яркой звездной 
+                                силой создают высококлассную модную фантазию.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-cols-2 gap-5 mt-[42px]">
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/bracelet-1.png" alt="Bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/earrings.png" alt="Earrings image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Earrings</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Second block -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mt-[150px]">
+
+                    <!-- Left content -->
+                    <div>
+                        <div>
+                            <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Сила цветов</h3>
+                            <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                                Чувственный. Поэтично. Прохладный. Ариана Гранде расцветает 
+                                в весенне-летнем сезоне 2025 года, воплощая собой яркую романтику 
+                                в Идиллии. Нежные мотивы флоры и фауны, созданные с удивительной 
+                                живостью, придают ей мягкое сияние.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-cols-2 gap-5 mt-[42px] w-[631px]">
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/bracelet-2.png" alt="Bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/flower-ring.png" alt="Flower ring image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Flower Ring</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right image -->
+                    <div class="relative w-[631px]">
+                        <img class="w-full h-[616px] object-cover" src="./images/ariana_grande_2.jpg" alt="Ariana Grande's photo">
+                        
+                        <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+
+                        <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                            <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Third block -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto mt-[150px]">
+
+                    <!-- Left image -->
+                    <div class="relative w-[631px]">
+                        <img class="w-full h-[616px] object-cover" src="./images/fashion-model.png" alt="Fashion model photo">
+
+                        <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white
+                            to-transparent pointer-events-none"></div>
+
+                        <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
+                                font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                            <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        </button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div>
+                        <div>
+                            <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Гема</h3>
+                            <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                                Погрузитесь в прекрасный сад цветущих кристаллов. Gema 
+                                предлагает сияющие украшения с нежными листьями и яркими 
+                                цветами, которые раскрываются на ваших глазах, а также яркие 
+                                продукты, вдохновленные этой линией.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-cols-2 gap-5 mt-[42px]">
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px] -mt-7" src="./images/bracelet-3.png" alt="Bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px] -mt-7" src="./images/earrings-1.png" alt="Earrings image">
+                                </div>
+
+                                <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Earrings</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Fourth block -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mt-[150px] h-[642px]">
+
+                    <!-- Left content -->
+                    <div>
+                        <div>
+                            <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Swarovski Una Angelic</h3>
+                            <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                                Наша коллекция Zodiac демонстрирует современный, но в то же время 
+                                сложный дизайн, который отражает уникальный дух 12 знаков зодиака. 
+                                Каждая статуэтка, безупречно ограненная белым хрусталем 
+                                и украшенная золотой гравировкой, станет идеальным 
+                                персонализированным подарком.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-cols-2 gap-5 mt-[42px] w-[628px] h-[402px]">
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/bracelet-4.png" alt="Bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/bracelet-5.png" alt="Bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Right image -->
+                    <div class="relative w-[632px]">
+                        <img class="w-full h-[642px] object-cover object-top" src="./images/black-woman.png" alt="Vlack woman's photo">
+                        
+                        <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
+
+                        <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                            <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Fifth block -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto mt-[150px] h-[642px]">
+
+                    <!-- Left image -->
+                    <div class="relative w-[631px]">
+                        <img class="w-full h-[642px] object-cover object-top" src="./images/watch-2.jpg" alt="Swarovski watch image">
+
+                        <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white
+                            to-transparent pointer-events-none"></div>
+
+                        <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
+                                font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
+                            <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
+                        </button>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div>
+                        <div>
+                            <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Матриц</h3>
+                            <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
+                                Приготовьтесь сиять с помощью полностью ограненных кристаллов 
+                                и страсти к цвету. Эта прекрасная линия украшений отличается 
+                                игривым дизайном, создающим еще более роскошный стиль, 
+                                и послужила источником вдохновения для создания действительно 
+                                выдающихся изделий.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-cols-2 gap-5 mt-[42px]">
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/diamond-earrings.png" alt="Diamond earrings image">
+                                </div>
+
+                                <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Diamond earrings</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <button class="w-10 h-10 absolute top-8 right-8">
+                                    <img src="./images/heart-icon.png" alt="Heart icon">
+                                </button>
+                                <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
+                                    <img class="w-[242px] h-[200px]" src="./images/diamond-bracelet.png" alt="Diamond bracelet image">
+                                </div>
+
+                                <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
+                                    <p>Diamond bracelet</p>
+                                    <p>21 100 000 ₽</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-16 mb-25">
+                    <button class="font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] border px-[74px] py-[14px]">
+                        <a href="#">Все коллекции</a>
                     </button>
                 </div>
 
-                <!-- Right Content -->
-                <div>
-                    <div>
-                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Гема</h3>
-                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
-                            Погрузитесь в прекрасный сад цветущих кристаллов. Gema 
-                            предлагает сияющие украшения с нежными листьями и яркими 
-                            цветами, которые раскрываются на ваших глазах, а также яркие 
-                            продукты, вдохновленные этой линией.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-cols-2 gap-5 mt-[42px]">
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px] -mt-7" src="./images/bracelet-3.png" alt="Bracelet image">
-                            </div>
-
-                            <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px] -mt-7" src="./images/earrings-1.png" alt="Earrings image">
-                            </div>
-
-                            <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Earrings</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
             </div>
+        </section>
 
+        <!-- Footer -->
+        <footer>
+                <div class="h-[424px] bg-[#8dbaed] flex justify-center items-center">
+                    <div class="content-wrapper flex items-center justify-center w-full mx-auto">
 
-            <!-- Fourth block -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mt-[150px] h-[642px]">
-
-                <!-- Left content -->
-                <div>
-                    <div>
-                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Swarovski Una Angelic</h3>
-                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
-                            Наша коллекция Zodiac демонстрирует современный, но в то же время 
-                            сложный дизайн, который отражает уникальный дух 12 знаков зодиака. 
-                            Каждая статуэтка, безупречно ограненная белым хрусталем 
-                            и украшенная золотой гравировкой, станет идеальным 
-                            персонализированным подарком.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-cols-2 gap-5 mt-[42px] w-[628px] h-[402px]">
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/bracelet-4.png" alt="Bracelet image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
+                        <div class="text-content flex-1 flex flex-col justify-center items-center max-w-[735px] h-[268px] py-[78px] ml-[270px]">
+                            <h1 class="font-['Zt_Chablis'] text-[38px] font-bold leading-[44px] pb-[22px]">Искусство сиять со Swarovski</h1>
+                            <p class="font-['Euclid_Circular_B'] text-lg leading-[26px] pb-[48px]">
+                                Откройте мир безупречной красоты и роскоши вместе 
+                                с кристаллами Swarovski! Наслаждайтесь изысканным 
+                                блеском ювелирных украшений, блистательных аксессуаров 
+                                и эксклюзивных подарков, созданных с непревзойденным 
+                                мастерством австрийских мастеров.
+                            </p>
+                            <button class="font-['Euclid_Circular_B'] bg-black text-white py-[14px] px-[74px] text-lg font-medium leading-[120%]">В каталог</button>
                         </div>
 
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/bracelet-5.png" alt="Bracelet image">
-                            </div>
-
-                            <div class="absolute bottom-8 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
+                        <div class="image-content relative left-50">
+                            <img class="w-[250px] h-[308px] object-contain" src="./images/swan.jpg" alt="Swan image">
                         </div>
 
                     </div>
                 </div>
 
-                <!-- Right image -->
-                <div class="relative w-[632px]">
-                    <img class="w-full h-[642px] object-cover object-top" src="./images/black-woman.png" alt="Vlack woman's photo">
-                    
-                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white to-transparent pointer-events-none"></div>
-
-                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
-                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
-                    </button>
-                </div>
-            </div>
-
-
-            <!-- Fifth block -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-4 mx-auto mt-[150px] h-[642px]">
-
-                <!-- Left image -->
-                <div class="relative w-[631px]">
-                    <img class="w-full h-[642px] object-cover object-top" src="./images/watch-2.jpg" alt="Swarovski watch image">
-
-                    <div class="absolute bottom-0 left-0 right-0 h-57 bg-gradient-to-t from-white
-                        to-transparent pointer-events-none"></div>
-
-                    <button class="w-[224px] h-[54px] rounded-sm border absolute bottom-1.5 left-[173.5px] 
-                            font-['Euclid_Circular_B'] font-medium text-lg leading-[120%] z-10">
-                        <a class="hover:bg-gray-300 active:scale-95 transition-transform duration-150">Посмотреть</a>
-                    </button>
-                </div>
-
-                <!-- Right Content -->
-                <div>
-                    <div>
-                        <h3 class="font-['Zt_Chablis'] font-bold text-[38px] leading-[44px] mb-6">Коллекция Матриц</h3>
-                        <p class="max-w-[550px] text-lg font-['Euclid_Circular_B'] leading-[26px]">
-                            Приготовьтесь сиять с помощью полностью ограненных кристаллов 
-                            и страсти к цвету. Эта прекрасная линия украшений отличается 
-                            игривым дизайном, создающим еще более роскошный стиль, 
-                            и послужила источником вдохновения для создания действительно 
-                            выдающихся изделий.
-                        </p>
-                    </div>
-
-                    <div class="flex flex-cols-2 gap-5 mt-[42px]">
-
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/diamond-earrings.png" alt="Diamond earrings image">
+                <!-- Quick links -->
+                <div class="h-[570px] w-full bg-black flex flex-col">
+                    <div class="quick-links w-[1300px] h-[230px] flex flex-col justify-between ml-[80px] mt-[80px]">
+                        
+                        <div class="flex justify-between items-start space-x-[170px]">
+                            
+                            <div class="flex flex-col text-white">
+                                <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Коллекции</h4>
+                                <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                                    <li>The Best Accessories for Your Black Dress</li>
+                                    <li>A High note</li>
+                                    <li>Astrology Gifts & Zodiac Accessories</li>
+                                    <li>Ocean-Inspired Jewelry</li>
+                                    <li>Eternal Sunshine</li>
+                                </ul>
                             </div>
 
-                            <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Diamond earrings</p>
-                                <p>21 100 000 ₽</p>
+                            <div class="text-white flex flex-col">
+                                <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Навигация</h4>
+                                <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                                    <li>Главная</li>
+                                    <li>О бренде</li>
+                                    <li>Каталог</li>
+                                    <li>FAQ</li>
+                                </ul>
+                            </div>
+
+                            <div class="text-white flex flex-col">
+                                <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Магазины</h4>
+                                <p class="font-['Euclid_Circular_B']">Магазины</p>
                             </div>
                         </div>
+                    </div>
 
-                        <div class="relative">
-                            <button class="w-10 h-10 absolute top-8 right-8">
-                                <img src="./images/heart-icon.png" alt="Heart icon">
-                            </button>
-                            <div class="w-[306px] h-[402px] bg-white flex justify-center items-center">
-                                <img class="w-[242px] h-[200px]" src="./images/diamond-bracelet.png" alt="Diamond bracelet image">
-                            </div>
+                    <div class="flex flex-col">
+                            <hr class="w-[1750px] border-t border-white opacity-30 mt-[71px] items-center justify-center mx-auto">
 
-                            <div class="absolute bottom-6 left-8 w-[242px] h-[75px] font-['Euclid_Circular_B'] text-lg leading-[26px] flex flex-col justify-between">
-                                <p>Diamond bracelet</p>
-                                <p>21 100 000 ₽</p>
-                            </div>
+                        <div class="text-center">
+                            <h1 class="text-white font-['EuclidRegular'] font-bold text-6xl my-[66px]">SWAROVSKI</h1>
                         </div>
-
                     </div>
                 </div>
-            </div>
-
-        </div>
-    </section>
-</body>
+        </footer>
+        
+    </body>
 </html>
