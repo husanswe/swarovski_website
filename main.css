@@ -38,7 +38,7 @@
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-    width: 100px;
+    width: 93px;
     height: 8px;
     background: #ECE9E9;
     border-radius: 36px;
