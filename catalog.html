@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
-        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="./main.css">
 
         <!-- Tailwind CSS tag -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -15,7 +15,7 @@
 
     <body>
         <!-- Header section -->
-        <header class="relative w-full h-[850px] bg-cover bg-no-repeat"
+        <header class="relative w-full h-[820px] bg-cover bg-no-repeat"
             style="background-image: url('./images/catalog-bg.jpg');" alt="Header background image">
 
             <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md">
@@ -61,6 +61,41 @@
             </div>
         </header>
 
-        
+
+        <!-- Accessories section -->
+        <main class="min-h-screen bg-[#f3f0e6] flex flex-col px-20 pt-8 pb-69.5">
+
+            <div class="container ml-[80px] mt-[20px] pt-0">
+                <nav>
+                    <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / 
+                    <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Аксессуары</a>
+                </nav>
+            </div>
+
+            <div class="flex">
+                <!-- Sidebar -->
+                <aside class="w-77 max-h-[930px] ">
+
+                    <!-- Gender Filter -->
+                    <div>
+                        <h3 class="pb-[18px]">Пол</h3>
+                        <div class="flex flex-col space-y-3 font-['Euclid_Circular_B'] text-lg leading-[26px]">
+                            <label for="male" class="flex">
+                                <img class="mr-6 h-[21px]" src="./images/checkbox.png" alt="Checkbox icon">
+                                Мужской
+                            </label>
+
+                            <label for="female" class="flex">
+                                <img class="mr-6 h-[21px]" src="./images/checkbox.png" alt="Checkbox icon">
+                                Женский
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+        </main>
+
+
     </body>
 </html>
