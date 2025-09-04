@@ -9,7 +9,7 @@
         <!-- Tailwind CSS tag -->
         <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-        <title>Catalog</title>
+        <title>Каталог</title>
     </head>
 
 
@@ -96,6 +96,7 @@
                     <!-- Price Range -->
                     <div class="mb-8">
                         <h3 class="pb-4.5 font-['Euclid_Circular_B'] font-medium text-xl leading-[120%]">Цена</h3>
+                        <input type="range" class="w-full h-2 mb-4 accent-black">
                         <div class="flex items-center gap-4 font-['Euclid_Circular_B'] leading-6">
                             <span class="text-lg font-medium">от</span>
                             <input type="number" placeholder="0 ₽" class="text-center no-spin-buttons w-11 h-8 border">
@@ -104,6 +105,52 @@
                             <input type="number" placeholder="20 000 ₽" class="text-center no-spin-buttons w-[87px] h-8 border">
                         </div>
                     </div>
+                    <hr class="border-[#B8B7B6] w-57 mb-8">
+
+                    <div>
+                        <h3 class="pb-4.5 font-['Euclid_Circular_B'] font-medium text-xl leading-[120%]">Текст</h3>
+                        <div class="flex flex-row justify-between space-y-4">
+                            <div class="font-['Euclid_Circular_B'] text-lg leading-6 font-medium space-y-4">
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                            </div>
+                            <div class="space-y-4">
+                                <img src="./images/down-arrow.png" alt="Down arrow icon">
+                                <img src="./images/down-arrow.png" alt="Down arrow icon">
+                                <img src="./images/down-arrow.png" alt="Down arrow icon">
+                                <img src="./images/down-arrow.png" alt="Down arrow icon">
+                                <img src="./images/down-arrow.png" alt="Down arrow icon">
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-[#B8B7B6] w-57 mb-8">
+                    
+                    <div>
+                        <h3 class="pb-4.5 font-['Euclid_Circular_B'] font-medium text-xl leading-[120%]">Текст</h3>
+                        <div class="flex space-x-6">
+                            <div class="space-y-3.5">
+                                <img src="./images/checkbox.png" alt="Checkbox icon" class="w-[21px] h-[21px]">
+                                <img src="./images/checkbox.png" alt="Checkbox icon" class="w-[21px] h-[21px]">
+                                <img src="./images/checkbox.png" alt="Checkbox icon" class="w-[21px] h-[21px]">
+                                <img src="./images/checkbox.png" alt="Checkbox icon" class="w-[21px] h-[21px]">
+                                <img src="./images/checkbox.png" alt="Checkbox icon" class="w-[21px] h-[21px]">
+                            </div>
+                            <div class="space-y-2 font-['Euclid_Circular_B'] text-lg leading-[26px]">
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                                <p>Текст</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="w-77 h-12.5 font-['Euclid_Circular_B'] text-lg leading-[120%] border mt-8">
+                        Сбросить все фильтры
+                    </button>
 
                 </aside>
             </div>
