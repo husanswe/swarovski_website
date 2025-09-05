@@ -3,11 +3,125 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Избранные</title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="icon" href="./images/swarovski_favicon.svg" type="image/x-icon">
+
+        <!-- Tailwind CSS tag -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <title>Избранное</title>
     </head>
 
 
     <body>
-        
+        <!-- Header section -->
+        <header class="relative bg-center bg-cover bg-no-repeat bg-[#f3f0e6] w-full h-[751px]" alt="Header background image">
+
+            <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md">
+                <div class="flex justify-center items-center pt-[43px] pb-[31px]">
+                    <h1 class="text-9xl text-white tracking-widest font-['EuclidRegular']">
+                        <a href="./index.html">SWAROVSKI</a>
+                    </h1>
+                </div>
+                
+                <nav class="text-white">
+                    <div class="flex justify-center items-center space-x-25 pb-5">
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Главная</a>
+                        <a href="./about-brand.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors text-nowrap">О бренде</a>
+                        <a href="./catalog.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Каталог</a>
+                        <a href="./collections.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Коллекции</a>
+                        <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Магазины</a>
+                        <div class="flex space-x-10">
+                            <img src="./images/search.png" alt="Magnifying glass icon">
+                            <img src="./images/favourites.png" alt="Heart icon">
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="container ml-[80px] mt-[20px] pt-0">
+                <nav>
+                    <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / 
+                    <a href="#" class="font-['Euclid_Circular_B'] leading-[24px]">Избранное</a>
+                </nav>
+            </div>
+
+            <h2 class="text-left font-['Zt_Chablis'] font-bold text-[62px] leading-16 mt-8 ml-20">Избранное</h2>
+
+            <div class="flex flex-col justify-center items-center mt-[123px] space-y-6">
+                <h4 class="font-['Euclid_Circular_B'] font-medium text-[28px]">В избранном нет товаров</h4>
+                <p class="underline font-medium text-lg leading-[26px] font-['Euclid_Circular_B']">
+                    <a href="#">Посмотреть товары</a>
+                </p>
+            </div>
+        </header>
+
+        <!-- Footer -->
+        <footer>
+            <div class="h-[424px] bg-[#8dbaed] flex justify-center items-center">
+                <div class="content-wrapper flex items-center justify-center w-full mx-auto">
+
+                    <div class="text-content flex-1 flex flex-col justify-center items-center max-w-[735px] h-[268px] py-[78px] ml-[270px]">
+                        <h1 class="font-['Zt_Chablis'] text-[38px] font-bold leading-[44px] pb-[22px]">Искусство сиять со Swarovski</h1>
+                        <p class="font-['Euclid_Circular_B'] text-lg leading-[26px] pb-[48px]">
+                           Откройте мир безупречной красоты и роскоши вместе 
+                           с кристаллами Swarovski! Наслаждайтесь изысканным 
+                           блеском ювелирных украшений, блистательных аксессуаров 
+                           и эксклюзивных подарков, созданных с непревзойденным 
+                           мастерством австрийских мастеров.
+                        </p>
+                        <button class="font-['Euclid_Circular_B'] bg-black text-white py-[14px] px-[74px] text-lg font-medium leading-[120%]">В каталог</button>
+                    </div>
+
+                    <div class="image-content relative left-50">
+                        <img class="w-[250px] h-[308px] object-contain" src="./images/swan.jpg" alt="Swan image">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Quick links -->
+            <div class="h-[570px] w-full bg-black flex flex-col">
+                <div class="quick-links w-[1300px] h-[230px] flex flex-col justify-between ml-[80px] mt-[80px]">
+                    
+                    <div class="flex justify-between items-start space-x-[170px]">
+                        
+                        <div class="flex flex-col text-white">
+                            <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Коллекции</h4>
+                            <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                                <li>The Best Accessories for Your Black Dress</li>
+                                <li>A High note</li>
+                                <li>Astrology Gifts & Zodiac Accessories</li>
+                                <li>Ocean-Inspired Jewelry</li>
+                                <li>Eternal Sunshine</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-white flex flex-col">
+                            <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Навигация</h4>
+                            <ul class="space-y-[14px] font-['Euclid_Circular_B']">
+                                <li>Главная</li>
+                                <li>О бренде</li>
+                                <li>Каталог</li>
+                                <li>FAQ</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-white flex flex-col">
+                            <h4 class="font-['Euclid_Circular_B'] font-medium text-xl leading-[120%] pb-[24px]">Магазины</h4>
+                            <p class="font-['Euclid_Circular_B']">Магазины</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                     <hr class="w-[1750px] border-t border-white opacity-30 mt-[71px] items-center justify-center mx-auto">
+
+                    <div class="text-center">
+                        <h1 class="text-white font-['EuclidRegular'] font-bold text-6xl my-[66px]">SWAROVSKI</h1>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
