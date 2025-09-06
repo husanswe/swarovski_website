@@ -19,18 +19,18 @@
 
             <div class="h-[260px] justify-center items-center top-0 left-0 w-full z-50 bg-gradient-to-b from-black/90 via-black/70 to-black/40">
                 <div class="flex justify-center items-center pt-[43px] pb-[31px]">
-                    <h1 class="text-9xl text-white tracking-widest font-['EuclidRegular']">
+                    <h1 class="text-9xl text-white tracking-widest font-['Euclid_Regular']">
                         <a href="./index.html">SWAROVSKI</a>
                     </h1>
                 </div>
 
                 <nav class="text-white">
                     <div class="flex justify-center items-center space-x-25 pb-5">
-                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Главная</a>
-                        <a href="./about-brand.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors text-nowrap">О бренде</a>
-                        <a href="./catalog.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Каталог</a>
-                        <a href="./collections.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Коллекции</a>
-                        <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['Euclid_Cicular_B'] transition-colors">Магазины</a>
+                        <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Главная</a>
+                        <a href="./about-brand.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors text-nowrap">О бренде</a>
+                        <a href="./catalog.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Каталог</a>
+                        <a href="./collections.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Коллекции</a>
+                        <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Магазины</a>
                         <div class="flex space-x-10">
                             <img src="./images/search.png" alt="Magnifying glass icon">
                             
@@ -49,16 +49,19 @@
 
         <!-- Main section -->
         <main class="h-[1194px] w-full lg:max-w-[1281px] mx-auto">
-            <div class="container mt-12 mb-8">
+
+            <!-- Navigation -->
+            <div class="mt-12 mb-8">
                 <nav>
-                    <a href="./index.html" class="text-[#757575] font-['Euclid_Circular_B'] leading-[24px]">Главная</a> / 
-                    <a href="#" class="font-['Euclid_Circular_B'] text-[#757575] leading-[24px]">Часы</a> /
-                    <a href="#" class="font-['Euclid_Circular_B'] text-black leading-[24px]">Женские</a>
+                    <a href="./index.html" class="text-[#757575] font-[''] leading-[24px]">Главная</a> / 
+                    <a href="#" class="font-[''] text-[#757575] leading-[24px]">Часы</a> /
+                    <a href="#" class="font-[''] text-black leading-[24px]">Женские</a>
                 </nav>
             </div>
 
-            <div class="flex h-[731px] w-[740px]">
-                <!-- Left images -->
+            <!-- Product section -->
+            <div class="flex h-auto w-[740px]">
+                <!-- Left side -->
                 <div class="flex flex-col w-50">
                     <div class="mb-3 flex flex-col items-center">
                         <img src="./images/left.png" alt="Up arrow" class="rotate-90 inline-block">
@@ -77,23 +80,35 @@
                 </div>
 
                 <!-- Main image -->
-                <div class="flex justify-center items-center">
+                <div class="flex flex-shrink-0 justify-center items-center">
                     <img src="./images/female_hand.jpg" alt="Green watch on female wrist image" class="w-[524px] h-[687px]">
                 </div>
             </div>
 
+            <!-- Right Side: Product Info -->
             <div class="text-left w-[525px] h-[326px]">
                 <div class="flex flex-col space-y-2 mb-8">
-                    <h2 class="font-['Euclid_Circular_B'] font-semibold text-5xl leading-[110%] line-clamp-3">
+                    <h2 class="font-['font-euclid'] font-semibold text-5xl leading-[110%] line-clamp-3">
                         Часы наручные женские Swarovski Crystalline
                     </h2>
-                    <p class="font-['Euclid_Circular_B'] text-lg leading-6.5">Женские</p>
+                    <p class="font-['font-euclid'] text-lg leading-6.5">Женские</p>
                 </div>
                 
                 <div class="flex flex-col space-y-2">
-                    <h2 class="font-['Euclid_Circular_B'] font-semibold text-[54px] leading-17">49 900 ₽</h2>
-                    <p class="font-['Euclid_Circular_B'] line-through leading-6.25">49 900 ₽</p>
+                    <h2 class="font-['font-euclid'] font-semibold text-[54px] leading-17">49 900 ₽</h2>
+                    <p class="font-['font-euclid'] line-through leading-6.25">49 900 ₽</p>
                 </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex gap-3 mt-[35px] h-[50px]">
+                <button class="bg-black text-white w-[237px] font-['font-euclid'] 
+                    font-medium text-lg leading-[120%]">В магазин
+                </button>
+                <button class="bg-white text-black border w-[247px] font-['font-euclid'] 
+                    font-medium text-lg leading-[120%]">
+                    В избранное
+                </button>
             </div>
         </main>
 
