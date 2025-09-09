@@ -19,7 +19,7 @@
             style="background-image: url('./images/header_bg.png');" alt="Header background image">
 
             <!-- Navbar -->
-            <div class="relative flex lg:h-[260px] lg:justify-center items-center top-0 left-0 w-full z-50 
+            <div class="flex lg:flex-col lg:h-[260px] lg:justify-center items-center top-0 left-0 w-full z-50 
                 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md
                 md:justify-around md:h-27">
 
@@ -32,27 +32,27 @@
                     </h1>
                 </div>
 
-                <nav class="text-white flex">
-                    <div class="lg:flex justify-center items-center lg:space-x-25 lg:pb-5 md:hidden">
+                <div class="flex items-center lg:justify-center lg:pb-5">
+                    <nav class="text-white lg:flex lg:gap-25 md:hidden">
                         <a href="#" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Главная</a>
                         <a href="./about-brand.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors text-nowrap">О бренде</a>
                         <a href="./catalog.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Каталог</a>
                         <a href="./collections.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Коллекции</a>
                         <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-['font-euclid'] transition-colors">Магазины</a>
-                    </div>
-
+                    </nav>
+                    
                     <div class="flex md:space-x-8 md:absolute md:top-10.5 md:right-8">
                         <img src="./images/search.png" alt="Magnifying glass icon">
                         <a href="./saved-items.html">
                             <img src="./images/favourites.png" alt="Heart icon">
                         </a>
                     </div>
-                </nav>
+                </div>
                 
             </div>
 
             <!-- Header content -->
-            <div class="absolute top-[550px] left-[130px] space-y-4 md:top-[492px] md:left-7 md:h-[225pxh]">
+            <div class="absolute lg:top-[650px] lg:left-[130px] space-y-4 md:top-[492px] md:left-7 md:h-[225px]">
                 <h2 class="text-[62px] leading-[120%] md:leading-16 font-bold text-black font-['Zt_Chablis']">Весна-Лето 2025</h2>
 
                 <p class="text-black max-w-sm text-[18px]/[26px] font-euclid">
@@ -60,11 +60,11 @@
                 </p>
 
                 <div class="flex gap-4 md:gap-2.5">
-                    <button class="bg-black text-white px-[74px] py-[14px] font-medium text-lg font-euclid">
+                    <button class="bg-black text-white px-18.5 py-3.5 font-medium text-lg font-euclid">
                         Каталог
                     </button>
 
-                    <button class="border border-black text-black px-[74px] py-[14px] font-medium text-lg font-euclid">
+                    <button class="border border-black text-black px-18.5 py-3.5 font-medium text-lg font-euclid">
                         Узнать больше
                     </button>
                 </div>
