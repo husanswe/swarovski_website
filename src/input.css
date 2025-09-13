@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+    --breakpoint-sm: 375px;
+    --breakpoint-md: 744px;
+}
+
 
 /* Custom fonts */
 @font-face {
