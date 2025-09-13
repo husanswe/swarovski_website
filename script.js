@@ -13,10 +13,10 @@ function updateDots() {
   dots.forEach((dot, index) => {
     if (index === currentSlide) {
       dot.classList.remove('bg-white');
-      dot.classList.add('bg-black'); // Active - qora
+      dot.classList.add('bg-black'); // Active - black
     } else {
       dot.classList.remove('bg-black');
-      dot.classList.add('bg-white'); // Inactive - oq
+      dot.classList.add('bg-white'); // Inactive - white
     }
   });
 }
