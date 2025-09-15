@@ -12,18 +12,18 @@
     <body class="overflow-x-hidden w-full">
 
         <!-- Header section -->
-        <header class="relative bg-center bg-cover bg-no-repeat lg:h-screen md:h-[783px] sm:h-[667px]"
-            style="background-image: url('./images/header_bg.png');" alt="Header background image">
+        <header class="overflow-x-hidden h-full relative bg-center bg-cover bg-no-repeat lg:h-screen md:h-[783px] sm:h-[667px]"
+            style="background-image: url('./images/header_bg.png');" class="max-w-full" alt="Header background image">
 
             <!-- Navbar -->
             <div class="flex lg:flex-col lg:h-[260px] lg:justify-center items-center top-0 left-0 w-full z-50 
                 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.3))] shadow-md
-                md:justify-around md:h-27 sm:h-14">
+                sm:justify-around md:h-27 sm:h-14">
 
-                <div class="lg:hidden absolute top-10.5 left-8">
+                <div class="lg:hidden absolute md:top-10.5 md:left-8 sm:left-4 sm:top-4 cursor-pointer">
                     <img src="./images/hamburger_menu.png" alt="Hamburger menu icon">
                 </div>
-                <div class="flex lg:pt-[43px] lg:pb-[31px] md:justify-center md:flex-grow">
+                <div class="flex lg:pt-[43px] lg:pb-[31px] sm:justify-center md:flex-grow">
                     <h1 class="lg:text-9xl text-white lg:tracking-widest font-['EuclidRegular'] 
                         md:text-5xl md:tracking-normal sm:text-3xl sm:tracking-normal">
                         SWAROVSKI
@@ -37,10 +37,9 @@
                         <a href="./catalog.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-euclid transition-colors">Каталог</a>
                         <a href="./collections.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-euclid transition-colors">Коллекции</a>
                         <a href="./stores.html" class="text-white hover:text-gray-200 font-normal text-[28px] font-euclid transition-colors">Магазины</a>
-                        
                     </nav>
                     
-                    <div class="flex gap-8 lg:static md:absolute md:top-10.5 md:right-8">
+                    <div class="flex gap-8 lg:static absolute md:top-10.5 md:right-8">
                         <img src="./images/search.png" alt="Search icon" class="w-6 h-6">  
                         <a href="./saved-items.html">
                             <img src="./images/favourites.png" alt="Heart icon" class="w-6 h-6">
@@ -51,9 +50,9 @@
             </div>
 
             <!-- Header content -->
-            <div class="absolute top-[583px] left-20 lg:h-54.5 md:h-[225px] sm:h-[143px] space-y-4 md:w-[507px]">
+            <div class="absolute max-w-full top-[583px] left-20 lg:h-54.5 md:h-[225px] md:w-[507px] sm:h-[143px] space-y-4 sm:w-[305px]">
 
-                <h2 class="lg:text-[62px] lg:leading-[120%] md:text-[62px] md:leading-16 font-bold text-black font-['Zt_Chablis']
+                <h2 class="lg:leading-[120%] md:text-[62px] md:leading-16 font-bold text-black font-['Zt_Chablis']
                     sm:text-3xl sm:leading-[122%]">
                     Весна-Лето 2025
                 </h2>
