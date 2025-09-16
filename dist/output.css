@@ -310,6 +310,9 @@
       max-width: 96rem;
     }
   }
+  .mx-20 {
+    margin-inline: calc(var(--spacing) * 20);
+  }
   .mx-\[80px\] {
     margin-inline: 80px;
   }
@@ -715,6 +718,9 @@
   .w-\[87px\] {
     width: 87px;
   }
+  .w-\[90\%\] {
+    width: 90%;
+  }
   .w-\[150px\] {
     width: 150px;
   }
@@ -777,6 +783,9 @@
   }
   .w-\[720px\] {
     width: 720px;
+  }
+  .w-\[735px\] {
+    width: 735px;
   }
   .w-\[810px\] {
     width: 810px;
