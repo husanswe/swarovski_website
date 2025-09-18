@@ -234,26 +234,8 @@
   .right-8 {
     right: calc(var(--spacing) * 8);
   }
-  .right-20 {
-    right: calc(var(--spacing) * 20);
-  }
-  .right-40 {
-    right: calc(var(--spacing) * 40);
-  }
-  .right-60 {
-    right: calc(var(--spacing) * 60);
-  }
-  .right-70 {
-    right: calc(var(--spacing) * 70);
-  }
-  .right-76 {
-    right: calc(var(--spacing) * 76);
-  }
   .right-78 {
     right: calc(var(--spacing) * 78);
-  }
-  .right-80 {
-    right: calc(var(--spacing) * 80);
   }
   .-bottom-0 {
     bottom: calc(var(--spacing) * -0);
@@ -285,35 +267,14 @@
   .left-1\/2 {
     left: calc(1/2 * 100%);
   }
-  .left-7 {
-    left: calc(var(--spacing) * 7);
-  }
   .left-8 {
     left: calc(var(--spacing) * 8);
-  }
-  .left-20 {
-    left: calc(var(--spacing) * 20);
-  }
-  .left-40 {
-    left: calc(var(--spacing) * 40);
   }
   .left-50 {
     left: calc(var(--spacing) * 50);
   }
-  .left-60 {
-    left: calc(var(--spacing) * 60);
-  }
-  .left-70 {
-    left: calc(var(--spacing) * 70);
-  }
-  .left-76 {
-    left: calc(var(--spacing) * 76);
-  }
   .left-78 {
     left: calc(var(--spacing) * 78);
-  }
-  .left-80 {
-    left: calc(var(--spacing) * 80);
   }
   .left-\[80px\] {
     left: 80px;
@@ -693,6 +654,9 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[644px\] {
+    max-height: 644px;
+  }
   .max-h-\[862px\] {
     max-height: 862px;
   }
@@ -900,14 +864,6 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .-translate-y-1 {
-    --tw-translate-y: calc(var(--spacing) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-1\/2 {
-    --tw-translate-y: calc(calc(1/2 * 100%) * -1);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .rotate-90 {
     rotate: 90deg;
   }
@@ -1097,6 +1053,9 @@
   }
   .overflow-x-hidden {
     overflow-x: hidden;
+  }
+  .overflow-y-hidden {
+    overflow-y: hidden;
   }
   .rounded-\[9px\] {
     border-radius: 9px;
@@ -1653,6 +1612,16 @@
       left: calc(var(--spacing) * 2.75);
     }
   }
+  .sm\:mb-6 {
+    @media (width >= 375px) {
+      margin-bottom: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:mb-8 {
+    @media (width >= 375px) {
+      margin-bottom: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:hidden {
     @media (width >= 375px) {
       display: none;
@@ -1768,6 +1737,11 @@
       top: calc(var(--spacing) * 123);
     }
   }
+  .md\:bottom-0 {
+    @media (width >= 744px) {
+      bottom: calc(var(--spacing) * 0);
+    }
+  }
   .md\:left-7 {
     @media (width >= 744px) {
       left: calc(var(--spacing) * 7);
@@ -1781,6 +1755,16 @@
   .md\:my-25 {
     @media (width >= 744px) {
       margin-block: calc(var(--spacing) * 25);
+    }
+  }
+  .md\:mb-4 {
+    @media (width >= 744px) {
+      margin-bottom: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:mb-6 {
+    @media (width >= 744px) {
+      margin-bottom: calc(var(--spacing) * 6);
     }
   }
   .md\:hidden {
@@ -2183,21 +2167,6 @@
 .font-euclid {
   font-family: 'Euclid_Circular_B', sans-serif;
 }
-@property --tw-translate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
-@property --tw-translate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: 0;
-}
 @property --tw-rotate-x {
   syntax: "*";
   inherits: false;
@@ -2436,9 +2405,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-translate-x: 0;
-      --tw-translate-y: 0;
-      --tw-translate-z: 0;
       --tw-rotate-x: initial;
       --tw-rotate-y: initial;
       --tw-rotate-z: initial;
