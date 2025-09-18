@@ -99,35 +99,36 @@
             </div>
         </article>
 
-       <!-- Slider section -->
-       <div class="relative w-full max-w-1216px mx-auto pt-[100px] pb-[130px] px-4 sm:px-8 md:px-16 lg:px-[100px]">
+        <!-- Slider section -->
+        <div class="relative ">
             
-            <div class="overflow-hidden rounded-lg">
-                <div id="carousel" class="flex transition-transform duration-500 ease-in-out h-[644px]">
-                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 object-cover" alt="Slide 1">
-                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 object-cover" alt="Slide 2">
-                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 object-cover" alt="Slide 3">
+            <div class="overflow-hidden lg:max-w-320 lg:mx-20 md:my-25 md:mx-10.25">
+                <div id="carousel" class="flex transition-transform justify-center items-center duration-500 ease-in-out h-[644px] lg:w-[1216px] md:w-[597px] sm:w-[270px]">
+                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 lg:w-[1216px] md:w-[597px] sm:w-[270px] bg-no-repeat bg-cover bg-center object-cover object-center" alt="Slide 1">
+                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 lg:w-[1216px] md:w-[597px] sm:w-[270px] bg-no-repeat bg-cover bg-center object-cover object-center" alt="Slide 2">
+                    <img src="./images/header_bg.png" class="w-full h-full flex-shrink-0 lg:w-[1216px] md:w-[597px] sm:w-[270px] bg-no-repeat bg-cover bg-center object-cover object-center" alt="Slide 3">
+                </div>
+
+                <button id="prev" class="absolute left-19 top-1/2 -translate-y-1/2 text-black cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path>
+                    </svg>
+                </button>
+            
+                <button id="next" class="absolute right-19 top-1/2 -translate-y-1/2 text-black cursor-pointer">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </button>
+            
+                <div class="flex justify-center mt-6 space-x-3">
+                    <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors active:bg-black"></button>
+                    <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors border-black"></button>
+                    <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors border-black"></button>
                 </div>
             </div>
             
-            <button id="prev" class="absolute left-19 top-1/2 -translate-y-1/2 text-black cursor-pointer">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path>
-                </svg>
-            </button>
-            
-            <button id="next" class="absolute right-19 top-1/2 -translate-y-1/2 text-black cursor-pointer">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 5l7 7-7 7"></path>
-                </svg>
-            </button>
-            
-            <div class="flex justify-center mt-6 space-x-3">
-                <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors active:bg-black"></button>
-                <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors border-black"></button>
-                <button class="w-3 h-3 border-1 bg-white rounded-full dot transition-colors border-black"></button>
-            </div>
-       </div>
+        </div>
 
 
         <!-- Popular products -->
