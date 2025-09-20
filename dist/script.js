@@ -1,43 +1,35 @@
 let currentSlide = 0;
-const slides = document.querySelectorAll('#carousel img');
-const dots = document.querySelectorAll('.dot');
-const totalSlides = slides.length;
 const carousel = document.getElementById('carousel');
+const dots = document.querySelectorAll('.dot');
 
-function updateCarousel() {
-  carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
-  updateDots();
+function updateSlider() {
+    const slideWidth = carousel.children[0].offsetWidth;
+    carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+    
+    dots.forEach((dot, index) => {
+        if (index === currentSlide) {
+            dot.className = 'w-3 h-3 bg-black rounded-full dot';
+        } else {
+            dot.className = 'w-3 h-3 border border-black bg-white rounded-full dot';
+        }
+    });
 }
-
-function updateDots() {
-  dots.forEach((dot, index) => {
-    if (index === currentSlide) {
-      dot.classList.remove('bg-white');
-      dot.classList.add('bg-black'); // Active - black
-    } else {
-      dot.classList.remove('bg-black');
-      dot.classList.add('bg-white'); // Inactive - white
-    }
-  });
-}
-
-// Arrow click events
-document.getElementById('next').addEventListener('click', () => {
-  currentSlide = (currentSlide + 1) % totalSlides;
-  updateCarousel();
-});
 
 document.getElementById('prev').addEventListener('click', () => {
-  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-  updateCarousel();
+    currentSlide = currentSlide > 0 ? currentSlide - 1 : 2;
+    updateSlider();
 });
 
-// Dot click events
+document.getElementById('next').addEventListener('click', () => {
+    currentSlide = currentSlide < 2 ? currentSlide + 1 : 0;
+    updateSlider();
+});
+
 dots.forEach((dot, index) => {
-  dot.addEventListener('click', () => {
-    currentSlide = index;
-    updateCarousel();
-  });
+    dot.addEventListener('click', () => {
+        currentSlide = index;
+        updateSlider();
+    });
 });
 
 // Initialize
