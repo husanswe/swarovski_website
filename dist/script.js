@@ -3,7 +3,8 @@ const carousel = document.getElementById('carousel');
 const dots = document.querySelectorAll('.dot');
 
 function updateSlider() {
-    const slideWidth = carousel.children[0].offsetWidth;
+    const container = document.querySelector('.overflow-hidden');
+    const slideWidth = container.offsetWidth;
     carousel.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
     
     dots.forEach((dot, index) => {
@@ -33,4 +34,4 @@ dots.forEach((dot, index) => {
 });
 
 // Initialize
-updateDots();
+updateSlider();
